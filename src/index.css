@@ -1,9 +1,33 @@
+/* @font-face {
+  font-family: 'Fraunces';
+  src: url('/fonts/Fraunces_72pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/fonts/Fraunces-Italic-Variable.ttf') format('truetype-variations');
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Italiana';
+  src: url('/fonts/Italiana-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
+
+/* html,
 body,
 #root {
     margin: 0;
@@ -12,4 +36,4 @@ body,
     height: 100%;
     overflow: hidden;
     background-color: #e5a9a9;
-}
+} */

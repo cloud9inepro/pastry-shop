@@ -1,18 +1,18 @@
 import { Canvas } from '@react-three/fiber'
 import { Loader } from "@react-three/drei";
-
 import  Experience  from './components/Experience'
 import { Header } from './components/Header'
+import { HeroSection } from './components/HeroSection'
 
 const App = () => {
   return (
     <>
     < Header/>
-
+    <HeroSection/>
    <Loader/>
-    <Canvas>
+    {/* <Canvas>
         <Experience/>
-    </Canvas>
+    </Canvas> */}
     </>
   )
 }
