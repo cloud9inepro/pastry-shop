@@ -46,10 +46,10 @@ export const PastryCard = ({ card }) => {
       className="relative flex bg-[#fdf1e7] rounded-2xl overflow-hidden border  border-[#e8d5c4] p-4 gap-4 shadow-lg hover:shadow-2xl transition-shadow duration-300"
     >
       <div  className="relative w-32 h-32 shrink-0 rounded-xl  bg-[#c97b7b]">
-        <Canvas camera={{ position: [0, 0, 3], fov: 40 }}>
+        <Canvas camera={{ position: [0, 0, 3], fov: 80 }}>
           <ambientLight intensity={0.8} />
           <directionalLight position={[3, 5, 2]} intensity={1.2} />
-          <CardPastry hoverAnim={card.hoverAnim} />
+          <CardPastry hoverAnim={card.hoverAnim} hovered={hovered} />
         </Canvas>
       </div>
 

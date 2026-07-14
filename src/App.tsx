@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { HeroSection } from './components/HeroSection'
 import { FreshCounter } from './components/FreshCounter'
 import { WhyBake } from './components/WhyBake'
+import { Footer } from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
     <HeroSection/>
     <FreshCounter/>
    <WhyBake/>
+   <Footer/>
     </>
   )
 }

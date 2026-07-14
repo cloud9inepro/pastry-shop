@@ -44,7 +44,7 @@ export const WhyBake = () => {
               {card.title}
             </h3>
 
-            <p className="text-[#5c4535] leading-relaxed">
+            <p className="text-[#5c4535] text-sm">
               {card.text}
             </p>
           </div>

@@ -1,4 +1,4 @@
-// CardPastry.jsx
+
 import { useRef, useState, useEffect } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
@@ -18,7 +18,7 @@ const BASE_ROTATION = [-Math.PI / 2, 0, 0]
 export const CardPastry = ({ hoverAnim, hovered }) => {
   const outerGroup = useRef(null) // static base rotation + position
   const spinGroup = useRef(null)  // live animated transform
-//   const [hovered, setHovered] = useState(false)
+  // const [hovered, setHovered] = useState(false)
 
   const groupKey = GROUP_BY_ANIM[hoverAnim]
   const config = PASTRY_GROUPS[groupKey]
@@ -27,7 +27,7 @@ export const CardPastry = ({ hoverAnim, hovered }) => {
   // idle gentle spin, same pattern as hero, paused on hover
   useFrame(() => {
     if (!spinGroup.current || hovered) return
-    spinGroup.current.rotation.y += 0.004
+    spinGroup.current.rotation.z += 0.004
   })
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export const CardPastry = ({ hoverAnim, hovered }) => {
     if (hoverAnim === 'bounce') {
       if (hovered) {
         gsap.to(target.position, {
-          y: '+=0.25',
+          y: '+=1.25',
           duration: 0.25,
           ease: 'power2.out',
           yoyo: true,
@@ -93,8 +93,8 @@ export const CardPastry = ({ hoverAnim, hovered }) => {
     <group ref={outerGroup} rotation={BASE_ROTATION}>
       <group ref={spinGroup} scale={0.012}>
         <mesh
-          onPointerOver={() => setHovered(true)}
-          onPointerOut={() => setHovered(false)}
+          // onPointerOver={() => setHovered(true)}
+          // onPointerOut={() => setHovered(false)}
           visible={false}
         >
           <sphereGeometry args={[1.5, 8, 8]} />
