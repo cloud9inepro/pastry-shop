@@ -11,7 +11,7 @@ export const HeroContent = () => {
       </p>
 
       <div className="flex items-center gap-6">
-        <button className="px-6 py-3 rounded-full border border-[#3d2b1f] text-[#3d2b1f] font-medium hover:bg-[#3d2b1f] bg-[#faf0e5] shadow-lg hover:animate-bounce hover:text-white transition-colors">
+        <button className="px-3 py-3 rounded-full border border-[#3d2b1f] text-[#3d2b1f] font-medium hover:bg-[#3d2b1f] bg-[#faf0e5] shadow-lg hover:animate-bounce hover:text-white transition-colors">
           Order Fresh Now
         </button>
         <a href="#menu" className="text-sm font-medium text-[#3d2b1f] underline underline-offset-4">

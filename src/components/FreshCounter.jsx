@@ -42,22 +42,19 @@ export const FreshCounter = () => {
 
       {/* card grid — DOM layout, each card's viewport tracked by a <View> */}
       <div
-        ref={containerRef}
-        className="relative grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto"
-      >
+  ref={containerRef}
+  style={{ perspective: 1000 }}
+  className="relative grid grid-cols-1 md:grid-cols-2  gap-8 max-w-3xl mx-auto lg:max-w-6xl  lg:gap-12"
+>
         {CARDS.map((card) => (
           <PastryCard key={card.id} card={card} />
         ))}
       </div>
 
       {/* single shared Canvas, positioned to cover the grid — all <View>s render into this */}
-      <Canvas
-        className="!absolute !inset-0 !w-full !h-full pointer-events-none"
-        eventSource={containerRef}
-        eventPrefix="client"
-      >
+     {/* <Canvas  className="absolute inset-0 pointer-events-none" eventSource={containerRef} eventPrefix="client" camera={{ position: [0, 0, 3], fov: 40 }}>
         <View.Port />
-      </Canvas>
+      </Canvas> */}
     </section>
   )
 }
