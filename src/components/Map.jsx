@@ -21,7 +21,7 @@ L.Icon.Default.mergeOptions({
 });
 
 export const Map = () => {
-  const position = [4.8156, 7.0499];
+  const position = [40.7128, -74.0060];
 
   return (
     <MapContainer
@@ -39,7 +39,7 @@ export const Map = () => {
       />
 
       <Marker position={position}>
-        <Popup>Port Harcourt, Nigeria</Popup>
+        <Popup> Nigeria</Popup>
       </Marker>
     </MapContainer>
   );

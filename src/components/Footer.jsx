@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="bg-[#faf0e5] py-10">
       <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_1fr] gap-8 max-w-6xl mx-auto px-6 items-start">
         {/* Map thumbnail */}
-        <div className="w-full md:w-40">
+        <div className="w-full md:w-[300px] h-[200px] md:h-[150px] rounded-lg overflow-hidden">
           <Map />
         </div>
 
@@ -55,7 +55,7 @@ export const Footer = () => {
 
       <div className="text-center">
         <p className="text-[#3d2b1f] text-xs">
-          Models crafted with love by MiwhyMiwh
+          
         </p>
       </div>
     </footer>
